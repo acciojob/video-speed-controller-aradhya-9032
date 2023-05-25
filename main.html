@@ -1,4 +1,36 @@
+
 <!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="player">
+    <video class="player__video" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></video>
+    <div class="player__controls">
+      <div class="progress">
+        <div class="progress__filled"></div>
+      </div>
+      <button class="player__button toggle" title="Toggle Play">►</button>
+      <input class="player__slider" type="range" name="volume" min="0" max="1" step="0.1" value="1">
+      <input class="player__slider" type="range" name="playbackRate" min="0.5" max="2" step="0.1" value="1">
+      <button class="player__button" data-skip="-10">« 10s</button>
+      <button class="player__button" data-skip="25">25s »</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,3 +51,4 @@
 </script>
 </body>
 </html>
+ -->
